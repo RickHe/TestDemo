@@ -2,6 +2,157 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:TestUDPBroadcast"
+      name = "TestUDPBroadcast">
+      <Group
+         location = "group:TestUDPBroadcast"
+         name = "TestUDPBroadcast">
+         <FileRef
+            location = "group:AppDelegate.h">
+         </FileRef>
+         <FileRef
+            location = "group:AppDelegate.m">
+         </FileRef>
+         <Group
+            location = "group:Assets.xcassets"
+            name = "Assets.xcassets">
+            <Group
+               location = "group:AppIcon.appiconset"
+               name = "AppIcon.appiconset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:Base.lproj"
+            name = "Base.lproj">
+            <FileRef
+               location = "group:LaunchScreen.storyboard">
+            </FileRef>
+            <FileRef
+               location = "group:Main.storyboard">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:DFCUDPBroadcast.h">
+         </FileRef>
+         <FileRef
+            location = "group:DFCUDPBroadcast.m">
+         </FileRef>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:main.m">
+         </FileRef>
+         <Group
+            location = "group:Source"
+            name = "Source">
+            <FileRef
+               location = "group:CocoaAsyncSocket.h">
+            </FileRef>
+            <Group
+               location = "group:GCD"
+               name = "GCD">
+               <FileRef
+                  location = "group:Documentation.html">
+               </FileRef>
+               <FileRef
+                  location = "group:GCDAsyncSocket.h">
+               </FileRef>
+               <FileRef
+                  location = "group:GCDAsyncSocket.m">
+               </FileRef>
+               <FileRef
+                  location = "group:GCDAsyncUdpSocket.h">
+               </FileRef>
+               <FileRef
+                  location = "group:GCDAsyncUdpSocket.m">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <Group
+               location = "group:Vendor"
+               name = "Vendor">
+               <Group
+                  location = "group:CocoaLumberjack"
+                  name = "CocoaLumberjack">
+                  <FileRef
+                     location = "group:DDAbstractDatabaseLogger.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DDAbstractDatabaseLogger.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DDASLLogger.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DDASLLogger.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DDFileLogger.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DDFileLogger.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DDLog+LOGV.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DDLog.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DDLog.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DDTTYLogger.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DDTTYLogger.m">
+                  </FileRef>
+                  <Group
+                     location = "group:Extensions"
+                     name = "Extensions">
+                     <FileRef
+                        location = "group:DDContextFilterLogFormatter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:DDContextFilterLogFormatter.m">
+                     </FileRef>
+                     <FileRef
+                        location = "group:DDDispatchQueueLogFormatter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:DDDispatchQueueLogFormatter.m">
+                     </FileRef>
+                     <FileRef
+                        location = "group:DDMultiFormatter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:DDMultiFormatter.m">
+                     </FileRef>
+                     <FileRef
+                        location = "group:README.txt">
+                     </FileRef>
+                  </Group>
+               </Group>
+            </Group>
+         </Group>
+         <FileRef
+            location = "group:ViewController.h">
+         </FileRef>
+         <FileRef
+            location = "group:ViewController.m">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:TestUDPBroadcast.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:TestCopy"
       name = "TestCopy">
       <Group
