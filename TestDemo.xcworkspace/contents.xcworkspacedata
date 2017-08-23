@@ -2,6 +2,32 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:TestCopy"
+      name = "TestCopy">
+      <Group
+         location = "group:TestCopy"
+         name = "TestCopy">
+         <FileRef
+            location = "group:main.m">
+         </FileRef>
+         <FileRef
+            location = "group:UserModel+Test.h">
+         </FileRef>
+         <FileRef
+            location = "group:UserModel+Test.m">
+         </FileRef>
+         <FileRef
+            location = "group:UserModel.h">
+         </FileRef>
+         <FileRef
+            location = "group:UserModel.m">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:TestCopy.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:TestPPTToImage"
       name = "TestPPTToImage">
       <FileRef
