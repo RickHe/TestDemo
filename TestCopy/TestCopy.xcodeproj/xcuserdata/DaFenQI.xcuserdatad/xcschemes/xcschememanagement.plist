@@ -4,15 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>TestUDPBroadcast.xcscheme</key>
+		<key>TestCopy.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>E7CC37E81ECE9C0000CC8509</key>
+		<key>51ED8DF81C2A702400CAD809</key>
 		<dict>
 			<key>primary</key>
 			<true/>
