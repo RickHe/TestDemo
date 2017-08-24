@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F93B67CC1D728EB20001990A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F93B67CB1D728EB20001990A /* main.m */; };
+		F93B67CF1D728EB20001990A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F93B67CE1D728EB20001990A /* AppDelegate.m */; };
+		F93B67D21D728EB20001990A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F93B67D11D728EB20001990A /* ViewController.m */; };
+		F93B67D51D728EB20001990A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F93B67D31D728EB20001990A /* Main.storyboard */; };
+		F93B67D71D728EB20001990A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F93B67D61D728EB20001990A /* Assets.xcassets */; };
+		F93B67DA1D728EB20001990A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F93B67D81D728EB20001990A /* LaunchScreen.storyboard */; };
+		F93B67FF1D728EE60001990A /* NSTimer+BlockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F93B67FE1D728EE60001990A /* NSTimer+BlockTimer.m */; };
+		F93B68051D7291EA0001990A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F93B68041D7291EA0001990A /* SecondViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F93B67C71D728EB20001990A /* Timer retain cycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Timer retain cycle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F93B67CB1D728EB20001990A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F93B67CD1D728EB20001990A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F93B67CE1D728EB20001990A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F93B67D01D728EB20001990A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F93B67D11D728EB20001990A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F93B67D41D728EB20001990A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F93B67D61D728EB20001990A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F93B67D91D728EB20001990A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F93B67DB1D728EB20001990A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F93B67FD1D728EE60001990A /* NSTimer+BlockTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+BlockTimer.h"; sourceTree = "<group>"; };
+		F93B67FE1D728EE60001990A /* NSTimer+BlockTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+BlockTimer.m"; sourceTree = "<group>"; };
+		F93B68031D7291EA0001990A /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		F93B68041D7291EA0001990A /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F93B67C41D728EB20001990A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F93B67BE1D728EB20001990A = {
+			isa = PBXGroup;
+			children = (
+				F93B67C91D728EB20001990A /* Timer retain cycle */,
+				F93B67C81D728EB20001990A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F93B67C81D728EB20001990A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F93B67C71D728EB20001990A /* Timer retain cycle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F93B67C91D728EB20001990A /* Timer retain cycle */ = {
+			isa = PBXGroup;
+			children = (
+				F93B67CD1D728EB20001990A /* AppDelegate.h */,
+				F93B67CE1D728EB20001990A /* AppDelegate.m */,
+				F93B67D01D728EB20001990A /* ViewController.h */,
+				F93B67D11D728EB20001990A /* ViewController.m */,
+				F93B67D31D728EB20001990A /* Main.storyboard */,
+				F93B67D61D728EB20001990A /* Assets.xcassets */,
+				F93B67D81D728EB20001990A /* LaunchScreen.storyboard */,
+				F93B67DB1D728EB20001990A /* Info.plist */,
+				F93B67CA1D728EB20001990A /* Supporting Files */,
+				F93B67FD1D728EE60001990A /* NSTimer+BlockTimer.h */,
+				F93B67FE1D728EE60001990A /* NSTimer+BlockTimer.m */,
+				F93B68031D7291EA0001990A /* SecondViewController.h */,
+				F93B68041D7291EA0001990A /* SecondViewController.m */,
+			);
+			path = "Timer retain cycle";
+			sourceTree = "<group>";
+		};
+		F93B67CA1D728EB20001990A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F93B67CB1D728EB20001990A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F93B67C61D728EB20001990A /* Timer retain cycle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F93B67F41D728EB20001990A /* Build configuration list for PBXNativeTarget "Timer retain cycle" */;
+			buildPhases = (
+				F93B67C31D728EB20001990A /* Sources */,
+				F93B67C41D728EB20001990A /* Frameworks */,
+				F93B67C51D728EB20001990A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Timer retain cycle";
+			productName = "Timer retain cycle";
+			productReference = F93B67C71D728EB20001990A /* Timer retain cycle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F93B67BF1D728EB20001990A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "何米颖大天才";
+				TargetAttributes = {
+					F93B67C61D728EB20001990A = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = F93B67C21D728EB20001990A /* Build configuration list for PBXProject "Timer retain cycle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F93B67BE1D728EB20001990A;
+			productRefGroup = F93B67C81D728EB20001990A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F93B67C61D728EB20001990A /* Timer retain cycle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F93B67C51D728EB20001990A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F93B67DA1D728EB20001990A /* LaunchScreen.storyboard in Resources */,
+				F93B67D71D728EB20001990A /* Assets.xcassets in Resources */,
+				F93B67D51D728EB20001990A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F93B67C31D728EB20001990A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F93B68051D7291EA0001990A /* SecondViewController.m in Sources */,
+				F93B67FF1D728EE60001990A /* NSTimer+BlockTimer.m in Sources */,
+				F93B67D21D728EB20001990A /* ViewController.m in Sources */,
+				F93B67CF1D728EB20001990A /* AppDelegate.m in Sources */,
+				F93B67CC1D728EB20001990A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F93B67D31D728EB20001990A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F93B67D41D728EB20001990A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F93B67D81D728EB20001990A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F93B67D91D728EB20001990A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F93B67F21D728EB20001990A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		F93B67F31D728EB20001990A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F93B67F51D728EB20001990A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Timer retain cycle/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tchmy.Timer-retain-cycle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F93B67F61D728EB20001990A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Timer retain cycle/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tchmy.Timer-retain-cycle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F93B67C21D728EB20001990A /* Build configuration list for PBXProject "Timer retain cycle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F93B67F21D728EB20001990A /* Debug */,
+				F93B67F31D728EB20001990A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F93B67F41D728EB20001990A /* Build configuration list for PBXNativeTarget "Timer retain cycle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F93B67F51D728EB20001990A /* Debug */,
+				F93B67F61D728EB20001990A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F93B67BF1D728EB20001990A /* Project object */;
+}

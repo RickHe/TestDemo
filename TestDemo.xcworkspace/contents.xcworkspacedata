@@ -2,6 +2,13 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:Timer-Retain-Cycle"
+      name = "Timer-Retain-Cycle">
+      <FileRef
+         location = "group:Timer retain cycle.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:encryption"
       name = "encryption">
       <FileRef
