@@ -2,6 +2,13 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:AssociatedObject"
+      name = "AssociatedObject">
+      <FileRef
+         location = "group:AssociatedObject.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:Timer-Retain-Cycle"
       name = "Timer-Retain-Cycle">
       <FileRef
