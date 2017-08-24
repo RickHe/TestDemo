@@ -14,27 +14,8 @@
 		E7E6616E1F4AC619009A0904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7E6616C1F4AC619009A0904 /* Main.storyboard */; };
 		E7E661701F4AC619009A0904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7E6616F1F4AC619009A0904 /* Assets.xcassets */; };
 		E7E661731F4AC619009A0904 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7E661711F4AC619009A0904 /* LaunchScreen.storyboard */; };
-		E7E6617E1F4AC619009A0904 /* TestPPTToImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E6617D1F4AC619009A0904 /* TestPPTToImageTests.m */; };
-		E7E661891F4AC619009A0904 /* TestPPTToImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E661881F4AC619009A0904 /* TestPPTToImageUITests.m */; };
 		E7E661991F4AC633009A0904 /* DFCPPTToImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E661981F4AC633009A0904 /* DFCPPTToImage.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E7E6617A1F4AC619009A0904 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E7E661581F4AC619009A0904 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E7E6615F1F4AC619009A0904;
-			remoteInfo = TestPPTToImage;
-		};
-		E7E661851F4AC619009A0904 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E7E661581F4AC619009A0904 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E7E6615F1F4AC619009A0904;
-			remoteInfo = TestPPTToImage;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E71D53FC1F4ACDDC00603049 /* iOS.pptx */ = {isa = PBXFileReference; lastKnownFileType = file; path = iOS.pptx; sourceTree = "<group>"; };
@@ -48,32 +29,12 @@
 		E7E6616F1F4AC619009A0904 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7E661721F4AC619009A0904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7E661741F4AC619009A0904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7E661791F4AC619009A0904 /* TestPPTToImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestPPTToImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7E6617D1F4AC619009A0904 /* TestPPTToImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPPTToImageTests.m; sourceTree = "<group>"; };
-		E7E6617F1F4AC619009A0904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7E661841F4AC619009A0904 /* TestPPTToImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestPPTToImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7E661881F4AC619009A0904 /* TestPPTToImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPPTToImageUITests.m; sourceTree = "<group>"; };
-		E7E6618A1F4AC619009A0904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7E661971F4AC633009A0904 /* DFCPPTToImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCPPTToImage.h; sourceTree = "<group>"; };
 		E7E661981F4AC633009A0904 /* DFCPPTToImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCPPTToImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E7E6615D1F4AC619009A0904 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E7E661761F4AC619009A0904 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E7E661811F4AC619009A0904 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -87,8 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				E7E661621F4AC619009A0904 /* TestPPTToImage */,
-				E7E6617C1F4AC619009A0904 /* TestPPTToImageTests */,
-				E7E661871F4AC619009A0904 /* TestPPTToImageUITests */,
 				E7E661611F4AC619009A0904 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,8 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				E7E661601F4AC619009A0904 /* TestPPTToImage.app */,
-				E7E661791F4AC619009A0904 /* TestPPTToImageTests.xctest */,
-				E7E661841F4AC619009A0904 /* TestPPTToImageUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,24 +84,6 @@
 				E7E661641F4AC619009A0904 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E7E6617C1F4AC619009A0904 /* TestPPTToImageTests */ = {
-			isa = PBXGroup;
-			children = (
-				E7E6617D1F4AC619009A0904 /* TestPPTToImageTests.m */,
-				E7E6617F1F4AC619009A0904 /* Info.plist */,
-			);
-			path = TestPPTToImageTests;
-			sourceTree = "<group>";
-		};
-		E7E661871F4AC619009A0904 /* TestPPTToImageUITests */ = {
-			isa = PBXGroup;
-			children = (
-				E7E661881F4AC619009A0904 /* TestPPTToImageUITests.m */,
-				E7E6618A1F4AC619009A0904 /* Info.plist */,
-			);
-			path = TestPPTToImageUITests;
 			sourceTree = "<group>";
 		};
 		E7E661961F4AC622009A0904 /* pptToImage */ = {
@@ -176,42 +115,6 @@
 			productReference = E7E661601F4AC619009A0904 /* TestPPTToImage.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E7E661781F4AC619009A0904 /* TestPPTToImageTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E7E661901F4AC619009A0904 /* Build configuration list for PBXNativeTarget "TestPPTToImageTests" */;
-			buildPhases = (
-				E7E661751F4AC619009A0904 /* Sources */,
-				E7E661761F4AC619009A0904 /* Frameworks */,
-				E7E661771F4AC619009A0904 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E7E6617B1F4AC619009A0904 /* PBXTargetDependency */,
-			);
-			name = TestPPTToImageTests;
-			productName = TestPPTToImageTests;
-			productReference = E7E661791F4AC619009A0904 /* TestPPTToImageTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		E7E661831F4AC619009A0904 /* TestPPTToImageUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E7E661931F4AC619009A0904 /* Build configuration list for PBXNativeTarget "TestPPTToImageUITests" */;
-			buildPhases = (
-				E7E661801F4AC619009A0904 /* Sources */,
-				E7E661811F4AC619009A0904 /* Frameworks */,
-				E7E661821F4AC619009A0904 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E7E661861F4AC619009A0904 /* PBXTargetDependency */,
-			);
-			name = TestPPTToImageUITests;
-			productName = TestPPTToImageUITests;
-			productReference = E7E661841F4AC619009A0904 /* TestPPTToImageUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -225,16 +128,6 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 7FZ9ATKHW2;
 						ProvisioningStyle = Automatic;
-					};
-					E7E661781F4AC619009A0904 = {
-						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = E7E6615F1F4AC619009A0904;
-					};
-					E7E661831F4AC619009A0904 = {
-						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = E7E6615F1F4AC619009A0904;
 					};
 				};
 			};
@@ -252,8 +145,6 @@
 			projectRoot = "";
 			targets = (
 				E7E6615F1F4AC619009A0904 /* TestPPTToImage */,
-				E7E661781F4AC619009A0904 /* TestPPTToImageTests */,
-				E7E661831F4AC619009A0904 /* TestPPTToImageUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -267,20 +158,6 @@
 				E71D53FD1F4ACDDC00603049 /* iOS.pptx in Resources */,
 				E7E661701F4AC619009A0904 /* Assets.xcassets in Resources */,
 				E7E6616E1F4AC619009A0904 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E7E661771F4AC619009A0904 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E7E661821F4AC619009A0904 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,36 +175,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7E661751F4AC619009A0904 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E7E6617E1F4AC619009A0904 /* TestPPTToImageTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E7E661801F4AC619009A0904 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E7E661891F4AC619009A0904 /* TestPPTToImageUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E7E6617B1F4AC619009A0904 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E7E6615F1F4AC619009A0904 /* TestPPTToImage */;
-			targetProxy = E7E6617A1F4AC619009A0904 /* PBXContainerItemProxy */;
-		};
-		E7E661861F4AC619009A0904 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E7E6615F1F4AC619009A0904 /* TestPPTToImage */;
-			targetProxy = E7E661851F4AC619009A0904 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E7E6616C1F4AC619009A0904 /* Main.storyboard */ = {
@@ -467,52 +315,6 @@
 			};
 			name = Release;
 		};
-		E7E661911F4AC619009A0904 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = TestPPTToImageTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = DaFenQi.TestPPTToImageTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestPPTToImage.app/TestPPTToImage";
-			};
-			name = Debug;
-		};
-		E7E661921F4AC619009A0904 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = TestPPTToImageTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = DaFenQi.TestPPTToImageTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestPPTToImage.app/TestPPTToImage";
-			};
-			name = Release;
-		};
-		E7E661941F4AC619009A0904 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = TestPPTToImageUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = DaFenQi.TestPPTToImageUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = TestPPTToImage;
-			};
-			name = Debug;
-		};
-		E7E661951F4AC619009A0904 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = TestPPTToImageUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = DaFenQi.TestPPTToImageUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = TestPPTToImage;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -530,24 +332,6 @@
 			buildConfigurations = (
 				E7E6618E1F4AC619009A0904 /* Debug */,
 				E7E6618F1F4AC619009A0904 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E7E661901F4AC619009A0904 /* Build configuration list for PBXNativeTarget "TestPPTToImageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E7E661911F4AC619009A0904 /* Debug */,
-				E7E661921F4AC619009A0904 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E7E661931F4AC619009A0904 /* Build configuration list for PBXNativeTarget "TestPPTToImageUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E7E661941F4AC619009A0904 /* Debug */,
-				E7E661951F4AC619009A0904 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

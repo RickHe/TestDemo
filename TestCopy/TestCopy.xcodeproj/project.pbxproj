@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		51ED8DFD1C2A702500CAD809 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ED8DFC1C2A702500CAD809 /* main.m */; };
-		51ED8E051C2A708B00CAD809 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ED8E041C2A708B00CAD809 /* UserModel.m */; };
-		51ED8E091C2A8B7200CAD809 /* UserModel+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 51ED8E081C2A8B7200CAD809 /* UserModel+Test.m */; };
+		E79B02C91F4EABF100D779EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E79B02C41F4EABF100D779EA /* main.m */; };
+		E79B02CA1F4EABF100D779EA /* UserModel+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = E79B02C61F4EABF100D779EA /* UserModel+Test.m */; };
+		E79B02CB1F4EABF100D779EA /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E79B02C81F4EABF100D779EA /* UserModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,11 +26,11 @@
 
 /* Begin PBXFileReference section */
 		51ED8DF91C2A702400CAD809 /* TestCopy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestCopy; sourceTree = BUILT_PRODUCTS_DIR; };
-		51ED8DFC1C2A702500CAD809 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		51ED8E031C2A708B00CAD809 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
-		51ED8E041C2A708B00CAD809 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
-		51ED8E071C2A8B7200CAD809 /* UserModel+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserModel+Test.h"; sourceTree = "<group>"; };
-		51ED8E081C2A8B7200CAD809 /* UserModel+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UserModel+Test.m"; sourceTree = "<group>"; };
+		E79B02C41F4EABF100D779EA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E79B02C51F4EABF100D779EA /* UserModel+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserModel+Test.h"; sourceTree = "<group>"; };
+		E79B02C61F4EABF100D779EA /* UserModel+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UserModel+Test.m"; sourceTree = "<group>"; };
+		E79B02C71F4EABF100D779EA /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		E79B02C81F4EABF100D779EA /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +47,7 @@
 		51ED8DF01C2A702400CAD809 = {
 			isa = PBXGroup;
 			children = (
-				51ED8DFB1C2A702400CAD809 /* Testttt */,
+				E79B02C31F4EABF100D779EA /* TestCopy */,
 				51ED8DFA1C2A702400CAD809 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,16 +60,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		51ED8DFB1C2A702400CAD809 /* Testttt */ = {
+		E79B02C31F4EABF100D779EA /* TestCopy */ = {
 			isa = PBXGroup;
 			children = (
-				51ED8DFC1C2A702500CAD809 /* main.m */,
-				51ED8E031C2A708B00CAD809 /* UserModel.h */,
-				51ED8E041C2A708B00CAD809 /* UserModel.m */,
-				51ED8E071C2A8B7200CAD809 /* UserModel+Test.h */,
-				51ED8E081C2A8B7200CAD809 /* UserModel+Test.m */,
+				E79B02C41F4EABF100D779EA /* main.m */,
+				E79B02C51F4EABF100D779EA /* UserModel+Test.h */,
+				E79B02C61F4EABF100D779EA /* UserModel+Test.m */,
+				E79B02C71F4EABF100D779EA /* UserModel.h */,
+				E79B02C81F4EABF100D779EA /* UserModel.m */,
 			);
-			path = Testttt;
+			path = TestCopy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51ED8E051C2A708B00CAD809 /* UserModel.m in Sources */,
-				51ED8E091C2A8B7200CAD809 /* UserModel+Test.m in Sources */,
-				51ED8DFD1C2A702500CAD809 /* main.m in Sources */,
+				E79B02CB1F4EABF100D779EA /* UserModel.m in Sources */,
+				E79B02C91F4EABF100D779EA /* main.m in Sources */,
+				E79B02CA1F4EABF100D779EA /* UserModel+Test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
