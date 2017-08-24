@@ -2,6 +2,13 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:encryption"
+      name = "encryption">
+      <FileRef
+         location = "group:&#x52a0;&#x5bc6;.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:TestHtmlToPdf"
       name = "TestHtmlToPdf">
       <FileRef
