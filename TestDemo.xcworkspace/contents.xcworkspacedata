@@ -2,6 +2,13 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:arrowToOffer"
+      name = "arrowToOffer">
+      <FileRef
+         location = "group:arrowToOffer.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:AssociatedObject"
       name = "AssociatedObject">
       <FileRef
