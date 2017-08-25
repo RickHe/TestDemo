@@ -2,6 +2,98 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:Sorting-Algorithm"
+      name = "Sorting-Algorithm">
+      <Group
+         location = "group:Sorting Algorithm"
+         name = "Sorting Algorithm">
+         <FileRef
+            location = "group:main.m">
+         </FileRef>
+         <Group
+            location = "group:SortAlgorithm"
+            name = "SortAlgorithm">
+            <FileRef
+               location = "group:BaseSort.h">
+            </FileRef>
+            <FileRef
+               location = "group:BaseSort.m">
+            </FileRef>
+            <Group
+               location = "group:HeapSort"
+               name = "HeapSort">
+               <FileRef
+                  location = "group:HeapSort.h">
+               </FileRef>
+               <FileRef
+                  location = "group:HeapSort.m">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:InsertSort"
+               name = "InsertSort">
+               <FileRef
+                  location = "group:BinaryInsertSort.h">
+               </FileRef>
+               <FileRef
+                  location = "group:BinaryInsertSort.m">
+               </FileRef>
+               <FileRef
+                  location = "group:QuickInsertSort.h">
+               </FileRef>
+               <FileRef
+                  location = "group:QuickInsertSort.m">
+               </FileRef>
+               <FileRef
+                  location = "group:ShellSort.h">
+               </FileRef>
+               <FileRef
+                  location = "group:ShellSort.m">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:MergeSort"
+               name = "MergeSort">
+               <FileRef
+                  location = "group:MergeSort.h">
+               </FileRef>
+               <FileRef
+                  location = "group:MergeSort.m">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:QuickSort"
+               name = "QuickSort">
+               <FileRef
+                  location = "group:BubbleSort.h">
+               </FileRef>
+               <FileRef
+                  location = "group:BubbleSort.m">
+               </FileRef>
+               <FileRef
+                  location = "group:QuickSort.h">
+               </FileRef>
+               <FileRef
+                  location = "group:QuickSort.m">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:SelectSort"
+               name = "SelectSort">
+               <FileRef
+                  location = "group:SelectSort.h">
+               </FileRef>
+               <FileRef
+                  location = "group:SelectSort.m">
+               </FileRef>
+            </Group>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:Sorting Algorithm.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:arrowToOffer"
       name = "arrowToOffer">
       <FileRef
