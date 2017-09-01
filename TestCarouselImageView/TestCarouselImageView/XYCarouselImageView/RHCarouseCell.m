@@ -8,7 +8,7 @@
 
 #import "RHCarouseCell.h"
 
-#define kLabelFrame CGRectMake(0, self.bounds.size.height - 22 - 8, self.bounds.size.width, 22)
+#define kLabelFrame CGRectMake(0, self.bounds.size.height - 22, self.bounds.size.width, 22)
 #define kDefaultFont [UIFont systemFontOfSize:16]
 #define kDefaultColor [UIColor blackColor]
 
