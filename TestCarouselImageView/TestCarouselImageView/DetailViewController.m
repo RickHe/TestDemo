@@ -29,6 +29,7 @@
     _carousel.backgroundColor = [UIColor blackColor];
     _carousel.topInset = 5;
     _carousel.bottomInset = 5;
+    _carousel.titles = [NSMutableArray arrayWithArray:@[@"第一页", @"第二页", @"第三页"]];
     [self.view addSubview:_carousel];
 }
 

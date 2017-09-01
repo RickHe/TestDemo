@@ -1,5 +1,5 @@
 //
-//  XYCarouselImageView.m
+//  XYCarouselcarouseCell.m
 //  Carousel Image Effect
 //
 //  Created by hmy2015 on 16/3/8.
@@ -7,13 +7,18 @@
 //
 
 #import "RHCarouselImageView.h"
-#import "UIImageView+RHCurrentImageIndex.h"
+#import "RHCarouseCell.h"
 
 static NSTimeInterval kAnimationDuration = 0.3;
-static NSInteger kNumberOfImageViewsToCreate = 5; // 复用
+static NSInteger kNumberOfcarouseCellsToCreate = 5; // 复用
 static CGFloat kDefaultMainImageWidthRatio = 0.6;
 static CGFloat kDefaultMinimumInteritemSpacing = 6;
 static CGFloat kDefaultAnimationDuration = 10.0f;
+
+#define kPageControlFrame  CGRectMake((self.frame.size.width - _pageCount * 5) / 2, self.frame.size.height - 20, _pageCount * 5, 16);
+#define kDefaultCurrentPageDotColor [UIColor grayColor]
+#define kDefaultPageDotColor [UIColor blackColor]
+
 
 @interface RHCarouselImageView () {
     CGFloat _width;         // view宽度
@@ -21,6 +26,8 @@ static CGFloat kDefaultAnimationDuration = 10.0f;
     CGFloat _imageHeight;   // 图片高度
     NSTimer *_timer;        // 定时器
     BOOL _isScrolling;      // 不重复滑动
+    UIPageControl *_pageControl;
+    NSInteger _pageCount;
 }
 
 @end
@@ -44,14 +51,24 @@ static CGFloat kDefaultAnimationDuration = 10.0f;
         _width = frame.size.width;
         _imageWidth = _mainImageWidthRatio * _width;
         _imageHeight = self.frame.size.height;
+        _pageCount = _dataSource.count;
+        _showPageControl = YES;
         
-        if (_dataSource.count < kNumberOfImageViewsToCreate) {
-            [_dataSource addObjectsFromArray:dataSource];
+        if (_dataSource.count < 3) {
+            [NSException exceptionWithName:@"error"
+                                    reason:@"at least 3 pages"
+                                  userInfo:nil];
+        }
+        
+        if (_dataSource.count < kNumberOfcarouseCellsToCreate) {
+            [_dataSource addObjectsFromArray:_dataSource];
         }
         
         [self p_createViews];
         [self p_addGestures];
         [self p_addTimer];
+        
+        [self rightSwipeAction];
     }
     return self;
 }
@@ -80,44 +97,96 @@ static CGFloat kDefaultAnimationDuration = 10.0f;
 }
 
 #pragma mark - setter
+- (void)setShowPageControl:(BOOL)showPageControl {
+    _showPageControl = showPageControl;
+    _pageControl.hidden = _showPageControl;
+}
+
+- (void)setPageDotColor:(UIColor *)pageDotColor {
+    _pageDotColor = pageDotColor;
+    _pageControl.pageIndicatorTintColor = _pageDotColor;
+}
+
+- (void)setCurrentPageDotColor:(UIColor *)currentPageDotColor {
+    _currentPageDotColor = currentPageDotColor;
+    _pageControl.currentPageIndicatorTintColor = _currentPageDotColor;
+}
+
 - (void)setTopInset:(CGFloat)topInset {
     _topInset = topInset;
     
-    for (int i = 0; i < kNumberOfImageViewsToCreate; i++) {
-        UIImageView *imageView = (UIImageView *)[self viewWithTag:i + 1];
-        CGRect frame = imageView.frame;
+    for (int i = 0; i < kNumberOfcarouseCellsToCreate; i++) {
+        RHCarouseCell *carouseCell = (RHCarouseCell *)[self viewWithTag:i + 1];
+        CGRect frame = carouseCell.frame;
         frame.origin.y = _topInset;
         frame.size.height -= _topInset;
-        imageView.frame = frame;
+        carouseCell.frame = frame;
     }
 }
 
 - (void)setBottomInset:(CGFloat)bottomInset {
     _bottomInset = bottomInset;
     
-    for (int i = 0; i < kNumberOfImageViewsToCreate; i++) {
-        UIImageView *imageView = (UIImageView *)[self viewWithTag:i + 1];
-        CGRect frame = imageView.frame;
+    for (int i = 0; i < kNumberOfcarouseCellsToCreate; i++) {
+        RHCarouseCell *carouseCell = (RHCarouseCell *)[self viewWithTag:i + 1];
+        CGRect frame = carouseCell.frame;
         frame.size.height -= _bottomInset;
-        imageView.frame = frame;
+        carouseCell.frame = frame;
+    }
+}
+
+- (void)setTitles:(NSMutableArray *)titles {
+    _titles = titles;
+    
+    if (_titles.count < kNumberOfcarouseCellsToCreate) {
+        [_titles addObjectsFromArray:_titles];
+    }
+    
+    for (int i = 0; i < kNumberOfcarouseCellsToCreate; i++) {
+        RHCarouseCell *carouseCell = (RHCarouseCell *)[self viewWithTag:i + 1];
+        carouseCell.title = _titles[i];
+    }
+}
+
+- (void)setTitleFont:(UIFont *)titleFont {
+    _titleFont = titleFont;
+    
+    for (int i = 0; i < kNumberOfcarouseCellsToCreate; i++) {
+        RHCarouseCell *carouseCell = (RHCarouseCell *)[self viewWithTag:i + 1];
+        carouseCell.titleFont = _titleFont;
+    }
+}
+
+- (void)setTitleColor:(UIColor *)titleColor {
+    _titleColor = titleColor;
+    
+    for (int i = 0; i < kNumberOfcarouseCellsToCreate; i++) {
+        RHCarouseCell *carouseCell = (RHCarouseCell *)[self viewWithTag:i + 1];
+        carouseCell.titleColor = _titleColor;
     }
 }
 
 #pragma mark - Custom
 - (void)p_createViews {
-    for (int i = 0; i < kNumberOfImageViewsToCreate; i++) {
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:[self p_getFrameByIndex:i]];
-        imageView.tag = i + 1;
-        imageView.rh_currentImageIndex = @(i);
-        imageView.image = [UIImage imageNamed:_dataSource[i]];
-        [self addSubview:imageView];
+    for (int i = 0; i < kNumberOfcarouseCellsToCreate; i++) {
+        RHCarouseCell *carouseCell = [[RHCarouseCell alloc] initWithFrame:[self p_getFrameByIndex:i]];
+        carouseCell.tag = i + 1;
+        carouseCell.currentImageIndex = i;
+        carouseCell.image = [UIImage imageNamed:_dataSource[i]];
+        [self addSubview:carouseCell];
     }
+    
+    _pageControl = [[UIPageControl alloc] init];
+    _pageControl.frame = kPageControlFrame;
+    _pageControl.numberOfPages = _pageCount;
+    _pageControl.currentPageIndicatorTintColor = kDefaultCurrentPageDotColor;
+    _pageControl.pageIndicatorTintColor = kDefaultPageDotColor;
+    _pageControl.userInteractionEnabled = NO;
+    _pageControl.currentPage = 2;
+    [self addSubview:_pageControl];
 }
 
 - (CGRect)p_getFrameByIndex:(NSInteger)index {
-    
-//    CGRectMake((1 - _mainImageWidthRatio) / 2 * _width - 2 * _minimumInteritemSpacing - 2 * _imageWidth + 4 * (_imageWidth + _minimumInteritemSpacing), 0, _imageWidth, _imageHeight);
-    
     CGFloat originX = (1 - _mainImageWidthRatio) / 2 * _width - 2 * _minimumInteritemSpacing - 2 * _imageWidth + index * (_imageWidth + _minimumInteritemSpacing);
     return CGRectMake(originX,
                       _topInset,
@@ -125,9 +194,9 @@ static CGFloat kDefaultAnimationDuration = 10.0f;
                       _imageHeight - _topInset - _bottomInset);
 }
 
-- (CGRect)p_getLeftGestureFrame:(UIImageView *)imageView {
-    CGFloat originX = imageView.frame.origin.x;
-    imageView.frame = CGRectMake(originX - 1 * (_imageWidth + _minimumInteritemSpacing), 0, _imageWidth, _imageHeight);
+- (CGRect)p_getLeftGestureFrame:(RHCarouseCell *)carouseCell {
+    CGFloat originX = carouseCell.frame.origin.x;
+    carouseCell.frame = CGRectMake(originX - 1 * (_imageWidth + _minimumInteritemSpacing), 0, _imageWidth, _imageHeight);
     
     return CGRectMake(originX - 1 * (_imageWidth + _minimumInteritemSpacing),
                       _topInset,
@@ -135,9 +204,9 @@ static CGFloat kDefaultAnimationDuration = 10.0f;
                       _imageHeight - _topInset - _bottomInset);
 }
 
-- (CGRect)p_getRightGestureFrame:(UIImageView *)imageView {
-    CGFloat originX = imageView.frame.origin.x;
-    imageView.frame = CGRectMake(originX - 1 * (_imageWidth + _minimumInteritemSpacing), 0, _imageWidth, _imageHeight);
+- (CGRect)p_getRightGestureFrame:(RHCarouseCell *)carouseCell {
+    CGFloat originX = carouseCell.frame.origin.x;
+    carouseCell.frame = CGRectMake(originX - 1 * (_imageWidth + _minimumInteritemSpacing), 0, _imageWidth, _imageHeight);
 
     return CGRectMake(originX + 1 * (_imageWidth + _minimumInteritemSpacing),
                       _topInset,
@@ -175,16 +244,15 @@ static CGFloat kDefaultAnimationDuration = 10.0f;
     [self leftSwipeAction];
 }
 
-- (BOOL)isLastImageView:(UIImageView *)imageView {
-    CGFloat originX = imageView.frame.origin.x;
+- (BOOL)isLastCarouseCell:(RHCarouseCell *)carouseCell {
+    CGFloat originX = carouseCell.frame.origin.x;
     return (fabs(originX - ((1 - _mainImageWidthRatio) / 2 * _width - 2 * _minimumInteritemSpacing - 2 * _imageWidth + 4 * (_imageWidth + _minimumInteritemSpacing))) < 1);
 }
 
-- (BOOL)isFirstImageView:(UIImageView *)imageView {
-    CGFloat originX = imageView.frame.origin.x;
+- (BOOL)isFirstcarouseCell:(RHCarouseCell *)carouseCell {
+    CGFloat originX = carouseCell.frame.origin.x;
     return (fabs(originX - ((1 - _mainImageWidthRatio) / 2 * _width - 2 * _minimumInteritemSpacing - 2 * _imageWidth + 0 * (_imageWidth + _minimumInteritemSpacing))) < 1);
 }
-
 
 #pragma mark - Gesture
 - (void)leftSwipeAction {
@@ -192,29 +260,36 @@ static CGFloat kDefaultAnimationDuration = 10.0f;
         return;
     }
     
-    UIImageView *tempImage;
-    for (int i = 0; i < kNumberOfImageViewsToCreate; i++) {
-        UIImageView *imageView = (UIImageView *)[self viewWithTag:i + 1];
-        if ([self isFirstImageView:imageView])  {
-            NSInteger currentIndex = [imageView.rh_currentImageIndex integerValue];
-            imageView.rh_currentImageIndex = @((currentIndex + _dataSource.count - 1) % _dataSource.count);
-            imageView.image = [UIImage imageNamed:_dataSource[(currentIndex + _dataSource.count - 1) % _dataSource.count]];
-            imageView.frame = [self p_getFrameByIndex:kNumberOfImageViewsToCreate - 1];
-            tempImage = imageView;
+    RHCarouseCell *tempImage;
+    for (int i = 0; i < kNumberOfcarouseCellsToCreate; i++) {
+        RHCarouseCell *carouseCell = (RHCarouseCell *)[self viewWithTag:i + 1];
+        if ([self isFirstcarouseCell:carouseCell])  {
+            NSInteger currentIndex = carouseCell.currentImageIndex;
+            carouseCell.currentImageIndex = (currentIndex + _dataSource.count - 1) % _dataSource.count;
+            carouseCell.image = [UIImage imageNamed:_dataSource[carouseCell.currentImageIndex]];
+            
+            if (carouseCell.currentImageIndex < _titles.count) {
+                carouseCell.title = _titles[carouseCell.currentImageIndex];
+            }
+            
+            carouseCell.frame = [self p_getFrameByIndex:kNumberOfcarouseCellsToCreate - 1];
+            tempImage = carouseCell;
         }
     }
 
     _isScrolling = YES;
     [UIView animateWithDuration:kAnimationDuration animations:^{
-        for (int i = 0; i < kNumberOfImageViewsToCreate; i++) {
-            UIImageView *imageView = (UIImageView *)[self viewWithTag:i + 1];
-            if (![self isFirstImageView:imageView] && ![imageView isEqual:tempImage]) {
-                imageView.frame = [self p_getLeftGestureFrame:imageView];
+        for (int i = 0; i < kNumberOfcarouseCellsToCreate; i++) {
+            RHCarouseCell *carouseCell = (RHCarouseCell *)[self viewWithTag:i + 1];
+            if (![self isFirstcarouseCell:carouseCell] && ![carouseCell isEqual:tempImage]) {
+                carouseCell.frame = [self p_getLeftGestureFrame:carouseCell];
             }
         }
     } completion:^(BOOL finished) {
         _isScrolling = NO;
     }];
+    
+    _pageControl.currentPage = (_pageControl.currentPage + 1) % _pageCount;
 }
 
 - (void)rightSwipeAction {
@@ -222,30 +297,38 @@ static CGFloat kDefaultAnimationDuration = 10.0f;
         return;
     }
     
-    UIImageView *tempImage;
-    for (int i = 0; i < kNumberOfImageViewsToCreate; i++) {
-        UIImageView *imageView = (UIImageView *)[self viewWithTag:i + 1];
-        if ([self isLastImageView:imageView])  {
-            NSInteger currentIndex = [imageView.rh_currentImageIndex integerValue];
-            imageView.rh_currentImageIndex = @((currentIndex + 1) % _dataSource.count);
-            imageView.image = [UIImage imageNamed:_dataSource[(currentIndex + 1) % _dataSource.count]];
-            imageView.frame = [self p_getFrameByIndex:0];
-            tempImage = imageView;
+    RHCarouseCell *tempImage;
+    for (int i = 0; i < kNumberOfcarouseCellsToCreate; i++) {
+        RHCarouseCell *carouseCell = (RHCarouseCell *)[self viewWithTag:i + 1];
+        if ([self isLastCarouseCell:carouseCell])  {
+            NSInteger currentIndex = carouseCell.currentImageIndex;
+            carouseCell.currentImageIndex = (currentIndex + 1) % _dataSource.count;
+            
+            carouseCell.image = [UIImage imageNamed:_dataSource[carouseCell.currentImageIndex]];
+            if (carouseCell.currentImageIndex < _titles.count) {
+                carouseCell.title = _titles[carouseCell.currentImageIndex];
+            }
+            
+            carouseCell.frame = [self p_getFrameByIndex:0];
+            tempImage = carouseCell;
         }
     }
 
     _isScrolling = YES;
     
     [UIView animateWithDuration:kAnimationDuration animations:^{
-        for (int i = 0; i < kNumberOfImageViewsToCreate; i++) {
-            UIImageView *imageView = (UIImageView *)[self viewWithTag:i + 1];
-            if (![self isLastImageView:imageView] && ![imageView isEqual:tempImage]) {
-                imageView.frame = [self p_getRightGestureFrame:imageView];
+        for (int i = 0; i < kNumberOfcarouseCellsToCreate; i++) {
+            RHCarouseCell *carouseCell = (RHCarouseCell *)[self viewWithTag:i + 1];
+            if (![self isLastCarouseCell:carouseCell] &&
+                ![carouseCell isEqual:tempImage]) {
+                carouseCell.frame = [self p_getRightGestureFrame:carouseCell];
             }
         }
     } completion:^(BOOL finished) {
         _isScrolling = NO;
     }] ;
+    
+    _pageControl.currentPage = (_pageControl.currentPage + _pageCount - 1) % _pageCount;
 }
 
 @end

@@ -13,7 +13,6 @@
 		E77EA4B91F593858006DC337 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77EA4B71F593858006DC337 /* Main.storyboard */; };
 		E77EA4BB1F593858006DC337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77EA4BA1F593858006DC337 /* Assets.xcassets */; };
 		E77EA4BE1F593858006DC337 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77EA4BC1F593858006DC337 /* LaunchScreen.storyboard */; };
-		E77EA4CA1F593867006DC337 /* UIImageView+RHCurrentImageIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = E77EA4C71F593867006DC337 /* UIImageView+RHCurrentImageIndex.m */; };
 		E77EA4CB1F593867006DC337 /* RHCarouselImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E77EA4C91F593867006DC337 /* RHCarouselImageView.m */; };
 		E77EA4DF1F593E35006DC337 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E77EA4D91F593E35006DC337 /* 1.jpg */; };
 		E77EA4E01F593E35006DC337 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E77EA4DA1F593E35006DC337 /* 2.jpg */; };
@@ -22,6 +21,7 @@
 		E77EA4E31F593E35006DC337 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E77EA4DD1F593E35006DC337 /* 5.jpg */; };
 		E77EA4E41F593E35006DC337 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E77EA4DE1F593E35006DC337 /* 6.jpg */; };
 		E77EA4E71F593F50006DC337 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E77EA4E61F593F50006DC337 /* DetailViewController.m */; };
+		E77EA4EA1F595E43006DC337 /* RHCarouseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E77EA4E91F595E43006DC337 /* RHCarouseCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +35,6 @@
 		E77EA4BA1F593858006DC337 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E77EA4BD1F593858006DC337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E77EA4BF1F593858006DC337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E77EA4C61F593867006DC337 /* UIImageView+RHCurrentImageIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RHCurrentImageIndex.h"; sourceTree = "<group>"; };
-		E77EA4C71F593867006DC337 /* UIImageView+RHCurrentImageIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+RHCurrentImageIndex.m"; sourceTree = "<group>"; };
 		E77EA4C81F593867006DC337 /* RHCarouselImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHCarouselImageView.h; sourceTree = "<group>"; };
 		E77EA4C91F593867006DC337 /* RHCarouselImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHCarouselImageView.m; sourceTree = "<group>"; };
 		E77EA4D91F593E35006DC337 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
@@ -47,6 +45,8 @@
 		E77EA4DE1F593E35006DC337 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
 		E77EA4E51F593F50006DC337 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		E77EA4E61F593F50006DC337 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		E77EA4E81F595E43006DC337 /* RHCarouseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHCarouseCell.h; sourceTree = "<group>"; };
+		E77EA4E91F595E43006DC337 /* RHCarouseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHCarouseCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +107,10 @@
 		E77EA4C51F593867006DC337 /* RHCarouselImageView */ = {
 			isa = PBXGroup;
 			children = (
-				E77EA4C61F593867006DC337 /* UIImageView+RHCurrentImageIndex.h */,
-				E77EA4C71F593867006DC337 /* UIImageView+RHCurrentImageIndex.m */,
 				E77EA4C81F593867006DC337 /* RHCarouselImageView.h */,
 				E77EA4C91F593867006DC337 /* RHCarouselImageView.m */,
+				E77EA4E81F595E43006DC337 /* RHCarouseCell.h */,
+				E77EA4E91F595E43006DC337 /* RHCarouseCell.m */,
 			);
 			name = RHCarouselImageView;
 			path = XYCarouselImageView;
@@ -160,6 +160,7 @@
 				TargetAttributes = {
 					E77EA4AA1F593858006DC337 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 7FZ9ATKHW2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -206,11 +207,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E77EA4EA1F595E43006DC337 /* RHCarouseCell.m in Sources */,
 				E77EA4B61F593858006DC337 /* ViewController.m in Sources */,
 				E77EA4B31F593858006DC337 /* AppDelegate.m in Sources */,
 				E77EA4CB1F593867006DC337 /* RHCarouselImageView.m in Sources */,
 				E77EA4B01F593858006DC337 /* main.m in Sources */,
-				E77EA4CA1F593867006DC337 /* UIImageView+RHCurrentImageIndex.m in Sources */,
 				E77EA4E71F593F50006DC337 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,7 +334,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7FZ9ATKHW2;
 				INFOPLIST_FILE = TestCarouselImageView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DaFenQi.TestCarouselImageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -344,7 +347,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7FZ9ATKHW2;
 				INFOPLIST_FILE = TestCarouselImageView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DaFenQi.TestCarouselImageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -370,6 +375,7 @@
 				E77EA4C41F593858006DC337 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

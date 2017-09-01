@@ -54,6 +54,16 @@
 @property (nonatomic, assign) CGFloat topInset;
 @property (nonatomic, assign) CGFloat bottomInset;
 
+@property (nonatomic, strong) NSMutableArray *titles;
+
+@property (nonatomic, strong) UIFont *titleFont;
+@property (nonatomic, strong) UIColor *titleColor;
+
+@property (nonatomic, strong) UIColor *currentPageDotColor;
+@property (nonatomic, strong) UIColor *pageDotColor;
+
+@property (nonatomic, assign) BOOL showPageControl;
+
 - (void)removeTimer;
 
 @end
