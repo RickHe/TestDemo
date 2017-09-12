@@ -30,3 +30,4 @@
 @property (nonatomic, strong) UIColor *currentPageDotColor; // 当前页圆点颜色
 @property (nonatomic, strong) UIColor *pageDotColor;        // 其他圆点颜色
 ```
+[App Store iPad 端首页无限循环轮播效果实现思路](http://www.jianshu.com/p/66f82c8f9a4b)
