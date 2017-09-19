@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _carousel = [[RHCarouselImageView alloc] initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 200) dataSource:@[@"1.jpg", @"2.jpg", @"3.jpg"] mainImageWidthRatio:0.6 minimumInteritemSpacing:10];
+    _carousel = [[RHCarouselImageView alloc] initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 300) dataSource:@[@"1.jpg", @"2.jpg", @"3.jpg"] mainImageWidthRatio:0.6 minimumInteritemSpacing:10];
     _carousel.backgroundColor = [UIColor blackColor];
     _carousel.topInset = 5;
     _carousel.bottomInset = 5;

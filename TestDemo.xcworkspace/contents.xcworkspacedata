@@ -2,6 +2,13 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:TestNavigationBarStyle"
+      name = "TestNavigationBarStyle">
+      <FileRef
+         location = "group:TestNavigationBarStyle.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:TestCarouselImageView"
       name = "TestCarouselImageView">
       <FileRef
