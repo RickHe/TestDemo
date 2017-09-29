@@ -9,13 +9,6 @@
       </FileRef>
    </Group>
    <Group
-      location = "group:TestStarView"
-      name = "TestStarView">
-      <FileRef
-         location = "group:TestStarView.xcodeproj">
-      </FileRef>
-   </Group>
-   <Group
       location = "group:TestNavigationBarStyle"
       name = "TestNavigationBarStyle">
       <FileRef
