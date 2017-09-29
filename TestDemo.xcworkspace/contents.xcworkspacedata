@@ -2,6 +2,13 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:TestStarView"
+      name = "TestStarView">
+      <FileRef
+         location = "group:TestStarView.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:TestWebView"
       name = "TestWebView">
       <FileRef
