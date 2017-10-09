@@ -2,6 +2,72 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:TestWebView"
+      name = "TestWebView">
+      <Group
+         location = "group:TestWebView"
+         name = "TestWebView">
+         <FileRef
+            location = "group:AppDelegate.h">
+         </FileRef>
+         <FileRef
+            location = "group:AppDelegate.m">
+         </FileRef>
+         <Group
+            location = "group:Assets.xcassets"
+            name = "Assets.xcassets">
+            <Group
+               location = "group:AppIcon.appiconset"
+               name = "AppIcon.appiconset">
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+         </Group>
+         <Group
+            location = "group:Base.lproj"
+            name = "Base.lproj">
+            <FileRef
+               location = "group:LaunchScreen.storyboard">
+            </FileRef>
+            <FileRef
+               location = "group:Main.storyboard">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:main.m">
+         </FileRef>
+         <Group
+            location = "group:RHWebView"
+            name = "RHWebView">
+            <FileRef
+               location = "group:NJKWebViewProgress.h">
+            </FileRef>
+            <FileRef
+               location = "group:NJKWebViewProgress.m">
+            </FileRef>
+            <FileRef
+               location = "group:RHWebView.h">
+            </FileRef>
+            <FileRef
+               location = "group:RHWebView.m">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:ViewController.h">
+         </FileRef>
+         <FileRef
+            location = "group:ViewController.m">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:TestWebView.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:TestStarView"
       name = "TestStarView">
       <Group
