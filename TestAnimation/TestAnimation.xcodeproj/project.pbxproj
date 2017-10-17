@@ -14,9 +14,10 @@
 		E7154D691F8F55A9009B1EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7154D681F8F55A9009B1EC3 /* Assets.xcassets */; };
 		E7154D6C1F8F55A9009B1EC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7154D6A1F8F55A9009B1EC3 /* LaunchScreen.storyboard */; };
 		E7154D761F8F578D009B1EC3 /* RHTransitionAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7154D741F8F578D009B1EC3 /* RHTransitionAnimationViewController.m */; };
-		E7154D7A1F8F57F0009B1EC3 /* RHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7154D791F8F57F0009B1EC3 /* RHViewController.m */; };
 		E7154D7D1F8F58CD009B1EC3 /* RHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7154D7C1F8F58CD009B1EC3 /* RHTableViewController.m */; };
 		E7154D801F8F7B38009B1EC3 /* RHSpringAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7154D7F1F8F7B38009B1EC3 /* RHSpringAnimationViewController.m */; };
+		E7154D831F906A3A009B1EC3 /* RHNormalAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7154D821F906A3A009B1EC3 /* RHNormalAnimationViewController.m */; };
+		E7154D861F909161009B1EC3 /* RHCoreAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7154D851F909161009B1EC3 /* RHCoreAnimationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,12 +34,14 @@
 		E7154D6D1F8F55A9009B1EC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7154D731F8F578D009B1EC3 /* RHTransitionAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHTransitionAnimationViewController.h; sourceTree = "<group>"; };
 		E7154D741F8F578D009B1EC3 /* RHTransitionAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHTransitionAnimationViewController.m; sourceTree = "<group>"; };
-		E7154D781F8F57F0009B1EC3 /* RHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHViewController.h; sourceTree = "<group>"; };
-		E7154D791F8F57F0009B1EC3 /* RHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHViewController.m; sourceTree = "<group>"; };
 		E7154D7B1F8F58CD009B1EC3 /* RHTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHTableViewController.h; sourceTree = "<group>"; };
 		E7154D7C1F8F58CD009B1EC3 /* RHTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHTableViewController.m; sourceTree = "<group>"; };
 		E7154D7E1F8F7B38009B1EC3 /* RHSpringAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHSpringAnimationViewController.h; sourceTree = "<group>"; };
 		E7154D7F1F8F7B38009B1EC3 /* RHSpringAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHSpringAnimationViewController.m; sourceTree = "<group>"; };
+		E7154D811F906A3A009B1EC3 /* RHNormalAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHNormalAnimationViewController.h; sourceTree = "<group>"; };
+		E7154D821F906A3A009B1EC3 /* RHNormalAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHNormalAnimationViewController.m; sourceTree = "<group>"; };
+		E7154D841F909161009B1EC3 /* RHCoreAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHCoreAnimationViewController.h; sourceTree = "<group>"; };
+		E7154D851F909161009B1EC3 /* RHCoreAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHCoreAnimationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,12 +94,14 @@
 		E7154D5B1F8F55A9009B1EC3 /* TestAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				E7154D841F909161009B1EC3 /* RHCoreAnimationViewController.h */,
+				E7154D851F909161009B1EC3 /* RHCoreAnimationViewController.m */,
+				E7154D811F906A3A009B1EC3 /* RHNormalAnimationViewController.h */,
+				E7154D821F906A3A009B1EC3 /* RHNormalAnimationViewController.m */,
 				E7154D7E1F8F7B38009B1EC3 /* RHSpringAnimationViewController.h */,
 				E7154D7F1F8F7B38009B1EC3 /* RHSpringAnimationViewController.m */,
 				E7154D731F8F578D009B1EC3 /* RHTransitionAnimationViewController.h */,
 				E7154D741F8F578D009B1EC3 /* RHTransitionAnimationViewController.m */,
-				E7154D781F8F57F0009B1EC3 /* RHViewController.h */,
-				E7154D791F8F57F0009B1EC3 /* RHViewController.m */,
 				E7154D7B1F8F58CD009B1EC3 /* RHTableViewController.h */,
 				E7154D7C1F8F58CD009B1EC3 /* RHTableViewController.m */,
 				E7154D5F1F8F55A9009B1EC3 /* AppDelegate.h */,
@@ -244,9 +249,10 @@
 				E7154D761F8F578D009B1EC3 /* RHTransitionAnimationViewController.m in Sources */,
 				E7154D611F8F55A9009B1EC3 /* AppDelegate.m in Sources */,
 				E7154D801F8F7B38009B1EC3 /* RHSpringAnimationViewController.m in Sources */,
+				E7154D861F909161009B1EC3 /* RHCoreAnimationViewController.m in Sources */,
 				E7154D7D1F8F58CD009B1EC3 /* RHTableViewController.m in Sources */,
-				E7154D7A1F8F57F0009B1EC3 /* RHViewController.m in Sources */,
 				E7154D5E1F8F55A9009B1EC3 /* main.m in Sources */,
+				E7154D831F906A3A009B1EC3 /* RHNormalAnimationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
