@@ -43,11 +43,7 @@ static NSString* const kCellId = @"cellId";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.tableView.tableFooterView = [UIView new];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellId];
     _tableViewItems = @[
                          [[RHTableViewItem alloc] initWithTitle:@"转场动画" className:@"RHTransitionAnimationViewController"],
@@ -82,6 +78,8 @@ static NSString* const kCellId = @"cellId";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellId forIndexPath:indexPath];
+    cell.separatorInset = UIEdgeInsetsZero;
+    cell.layoutMargins = UIEdgeInsetsZero;
     RHTableViewItem *tableViewItem = _tableViewItems[indexPath.row];
     for (UIView *subview in cell.contentView.subviews) {
         [subview removeFromSuperview];

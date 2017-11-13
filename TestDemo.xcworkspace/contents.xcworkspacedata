@@ -2,6 +2,13 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:TestDemoTemplate"
+      name = "TestDemoTemplate">
+      <FileRef
+         location = "group:TestDemoTemplate.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:TestNetworkRequest"
       name = "TestNetworkRequest">
       <FileRef
