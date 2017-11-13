@@ -2,6 +2,13 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:TestSmallFeature"
+      name = "TestSmallFeature">
+      <FileRef
+         location = "group:TestSmallFeature.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:TestDemoTemplate"
       name = "TestDemoTemplate">
       <FileRef
