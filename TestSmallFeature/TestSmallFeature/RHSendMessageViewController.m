@@ -17,6 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // MessageUI 内部发送短信
+    MFMessageComposeViewController *composeVC = [[MFMessageComposeViewController alloc] init];
+    composeVC.body = @"套餐";
+    composeVC.recipients = @[@"10086"];
+    composeVC.messageComposeDelegate = self;
+    [self presentViewController:composeVC animated:YES completion:nil];
 }
 
 - (IBAction)sendMessageAction:(UIButton *)sender {

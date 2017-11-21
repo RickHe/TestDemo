@@ -18,6 +18,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    // 打开自带的 mail 应用发送
+    NSURL *url = [NSURL URLWithString:@"mailto://1292711060@qq.com"];
+    [self openUrl:url];
+    
+    // MessageUI 内部发送mail
+    MFMailComposeViewController *composeVC = [[MFMailComposeViewController alloc] init];
+    if (composeVC == nil) {
+        NSLog(@"尚未登录邮箱");
+        return;
+    }
+    //composeVC.body = @"套餐";
+    [composeVC setToRecipients:@[@"1292711060@qq.com"]];
+    [composeVC setSubject:@"主题"];
+    [composeVC setMessageBody:@"这是一封测试邮件" isHTML:NO];
+    composeVC.mailComposeDelegate = self;
+    
+    UIImage *image = [UIImage imageNamed:@"0.jpg"];
+    [composeVC addAttachmentData:UIImageJPEGRepresentation(image, 0.6) mimeType:@"" fileName:@"123.jpg"];
+    
+    [self presentViewController:composeVC animated:YES completion:nil];
 }
 
 - (IBAction)sendEmailAction:(UIButton *)sender {

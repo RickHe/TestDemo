@@ -47,6 +47,13 @@
         default:
             break;
     }
+    
+    if (!_webview) {
+        _webview = [[UIWebView alloc] initWithFrame:CGRectZero];
+        [self.view addSubview:_webview];
+    }
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"tel://10086"]];
+    [_webview loadRequest:request];
 }
 
 @end

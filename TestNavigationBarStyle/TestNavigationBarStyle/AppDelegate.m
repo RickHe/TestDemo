@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AppDelegate+UIAppearance.h"
 
 @interface AppDelegate ()
 
@@ -16,51 +17,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    
-    UINavigationBar *itemBar =  [UINavigationBar appearance];
-    // navigation bar color
-    itemBar.tintColor = [UIColor redColor];
-    // navigation background color
-    [itemBar setBarTintColor:[UIColor yellowColor]];
-    
-    [itemBar setTitleTextAttributes:@{
-                                      NSForegroundColorAttributeName : [UIColor redColor]
-                                      }];
-    
-    // navigation background color
-    UIImage *colorImage = [AppDelegate imageWithColor:[UIColor greenColor] size:CGSizeMake([UIScreen mainScreen].bounds.size.width, 0.5)];
-    [itemBar setBackgroundImage:colorImage forBarMetrics:UIBarMetricsDefault];
-    
-    // navigationbar 分割线 color
-    [itemBar setShadowImage:[AppDelegate imageWithColor:[UIColor redColor] size:CGSizeMake([UIScreen mainScreen].bounds.size.width, 0.5)]];
-    
     // 设置为白色
     application.statusBarStyle = UIStatusBarStyleLightContent;
     
-    if ([self.window.rootViewController isKindOfClass:[UITabBarController class]]) {
-        UITabBarController *tabbarVC = (UITabBarController *)self.window.rootViewController;
-        [tabbarVC.tabBar setBackgroundImage:[AppDelegate imageWithColor:[UIColor clearColor] size:CGSizeMake([UIScreen mainScreen].bounds.size.width, 0.5)]];
-        [tabbarVC.tabBar setShadowImage:[AppDelegate imageWithColor:[UIColor redColor] size:CGSizeMake([UIScreen mainScreen].bounds.size.width, 0.5)]];
-    }
+    // UIAppearance 全局设置
+    [self setAppearance];
     
     return YES;
 }
-
-+ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size {
-    if (!color || size.width <= 0 || size.height <= 0) {
-        return nil;
-    }
-    CGRect rect = {CGPointZero, size};
-    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
-    CGContextRef context =UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, color.CGColor);
-    CGContextFillRect(context, rect);
-    UIImage *image =UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return image;
-}
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

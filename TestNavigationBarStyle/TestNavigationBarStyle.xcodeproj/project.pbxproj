@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7674E151FC41DF000F5B938 /* AppDelegate+UIAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = E7674E141FC41DF000F5B938 /* AppDelegate+UIAppearance.m */; };
 		E77FFBBC1F70F1A40025497D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E77FFBBB1F70F1A40025497D /* main.m */; };
 		E77FFBBF1F70F1A40025497D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E77FFBBE1F70F1A40025497D /* AppDelegate.m */; };
 		E77FFBC21F70F1A40025497D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E77FFBC11F70F1A40025497D /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E7674E131FC41DF000F5B938 /* AppDelegate+UIAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+UIAppearance.h"; sourceTree = "<group>"; };
+		E7674E141FC41DF000F5B938 /* AppDelegate+UIAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+UIAppearance.m"; sourceTree = "<group>"; };
 		E77FFBB71F70F1A40025497D /* TestNavigationBarStyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestNavigationBarStyle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77FFBBB1F70F1A40025497D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E77FFBBD1F70F1A40025497D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +61,8 @@
 		E77FFBB91F70F1A40025497D /* TestNavigationBarStyle */ = {
 			isa = PBXGroup;
 			children = (
+				E7674E131FC41DF000F5B938 /* AppDelegate+UIAppearance.h */,
+				E7674E141FC41DF000F5B938 /* AppDelegate+UIAppearance.m */,
 				E77FFBBD1F70F1A40025497D /* AppDelegate.h */,
 				E77FFBBE1F70F1A40025497D /* AppDelegate.m */,
 				E77FFBC01F70F1A40025497D /* ViewController.h */,
@@ -152,6 +157,7 @@
 			files = (
 				E77FFBC21F70F1A40025497D /* ViewController.m in Sources */,
 				E77FFBBF1F70F1A40025497D /* AppDelegate.m in Sources */,
+				E7674E151FC41DF000F5B938 /* AppDelegate+UIAppearance.m in Sources */,
 				E77FFBBC1F70F1A40025497D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +317,7 @@
 				E77FFBD01F70F1A40025497D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
