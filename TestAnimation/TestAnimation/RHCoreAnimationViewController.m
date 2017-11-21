@@ -40,7 +40,7 @@ typedef NS_ENUM(NSUInteger, kRHAnimationType) {
     
     // 关键帧帧动画
     UILabel *keyFrameAnimationLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 300, 200, 60)];
-    keyFrameAnimationLabel.text = @"keyFrame Animation Bounds";
+    keyFrameAnimationLabel.text = @"keyFrame Animation";
     keyFrameAnimationLabel.backgroundColor = [UIColor greenColor];
     keyFrameAnimationLabel.textAlignment = NSTextAlignmentCenter;
     keyFrameAnimationLabel.userInteractionEnabled = YES;
@@ -50,8 +50,8 @@ typedef NS_ENUM(NSUInteger, kRHAnimationType) {
     [keyFrameAnimationLabel addGestureRecognizer:tap1];
     
     // CAAnimationGroup
-    UILabel *groupAnimationLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 300, 200, 60)];
-    groupAnimationLabel.text = @"keyFrame Animation Bounds";
+    UILabel *groupAnimationLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 00, 200, 60)];
+    groupAnimationLabel.text = @"AnimationGroup";
     groupAnimationLabel.backgroundColor = [UIColor greenColor];
     groupAnimationLabel.textAlignment = NSTextAlignmentCenter;
     groupAnimationLabel.userInteractionEnabled = YES;
@@ -64,8 +64,45 @@ typedef NS_ENUM(NSUInteger, kRHAnimationType) {
 #pragma mark - group
 
 - (void)groupAnimationAction:(UITapGestureRecognizer *)tap {
-    CABasicAnimation *basicAnimation = [CABasicAnimation animation];
+    CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
+    
+    animationGroup.animations = @[
+                                  [self animation:kRHAnimationTypeBounds],
+                                  [self animation:kRHAnimationTypePosition],
+                                  [self animation:kRHAnimationTypeTransform]
+                                  ];
+    animationGroup.duration = 1;
+    animationGroup.fillMode = kCAFillModeBackwards; // 恢复原态
+    animationGroup.removedOnCompletion = NO;
+    [tap.view.layer addAnimation:animationGroup forKey:@"animationGroup"];
+}
 
+- (CABasicAnimation *)animation:(kRHAnimationType) type {
+    CABasicAnimation *basicAnimation = [CABasicAnimation animation];
+    
+    switch (type) {
+        case kRHAnimationTypeBounds:
+            // 缩放动画
+            basicAnimation.keyPath = @"bounds";
+            basicAnimation.toValue = [NSValue valueWithCGRect:kEndFrame];
+            break;
+        case kRHAnimationTypeTransform:
+            // 旋转动画
+            basicAnimation.keyPath = @"transform";
+            basicAnimation.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI, 1, 1, 0)];
+            break;
+        case kRHAnimationTypePosition:
+            // 平移动画
+            basicAnimation.keyPath = @"position";
+            basicAnimation.toValue = [NSValue valueWithCGPoint:CGPointMake(200, 400)];
+        default:
+            break;
+    }
+    basicAnimation.duration = .8f;
+    basicAnimation.removedOnCompletion = NO;
+    basicAnimation.fillMode = kCAFillModeForwards;
+    
+    return basicAnimation;
 }
 
 #pragma mark - 基础动画
