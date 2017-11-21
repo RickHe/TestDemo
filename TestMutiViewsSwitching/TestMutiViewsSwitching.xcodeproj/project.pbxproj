@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E75057E91FC27E9B00D3B66D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E75057E81FC27E9B00D3B66D /* AppDelegate.m */; };
+		E75057F11FC27E9B00D3B66D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E75057F01FC27E9B00D3B66D /* Assets.xcassets */; };
+		E75057F41FC27E9B00D3B66D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E75057F21FC27E9B00D3B66D /* LaunchScreen.storyboard */; };
+		E75057F71FC27E9B00D3B66D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E75057F61FC27E9B00D3B66D /* main.m */; };
+		E75058001FC27ED000D3B66D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E75057FE1FC27ED000D3B66D /* Main.storyboard */; };
+		E75058011FC27ED000D3B66D /* RHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75057FF1FC27ED000D3B66D /* RHTableViewController.m */; };
+		E75058051FC27EEC00D3B66D /* RHPushAndPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75058031FC27EEC00D3B66D /* RHPushAndPopViewController.m */; };
+		E75058061FC27EEC00D3B66D /* RHPushAndPopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75058041FC27EEC00D3B66D /* RHPushAndPopViewController.xib */; };
+		E750580D1FC27F4200D3B66D /* RHModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E750580B1FC27F4200D3B66D /* RHModalViewController.m */; };
+		E750580E1FC27F4300D3B66D /* RHModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E750580C1FC27F4200D3B66D /* RHModalViewController.xib */; };
+		E75058121FC27F6000D3B66D /* RHRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75058101FC27F6000D3B66D /* RHRootViewController.m */; };
+		E75058131FC27F6000D3B66D /* RHRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75058111FC27F6000D3B66D /* RHRootViewController.xib */; };
+		E75058171FC27FA300D3B66D /* RHAddChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75058151FC27FA300D3B66D /* RHAddChildViewController.m */; };
+		E75058181FC27FA300D3B66D /* RHAddChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75058161FC27FA300D3B66D /* RHAddChildViewController.xib */; };
+		E75058241FC2850200D3B66D /* RHModalTargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75058221FC2850200D3B66D /* RHModalTargetViewController.m */; };
+		E75058251FC2850200D3B66D /* RHModalTargetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75058231FC2850200D3B66D /* RHModalTargetViewController.xib */; };
+		E75058291FC285D400D3B66D /* RHRootTargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75058271FC285D400D3B66D /* RHRootTargetViewController.m */; };
+		E750582A1FC285D400D3B66D /* RHRootTargetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75058281FC285D400D3B66D /* RHRootTargetViewController.xib */; };
+		E75058311FC2888600D3B66D /* RHFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E750582F1FC2888600D3B66D /* RHFirstViewController.m */; };
+		E75058321FC2888600D3B66D /* RHFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75058301FC2888600D3B66D /* RHFirstViewController.xib */; };
+		E75058361FC2889500D3B66D /* RHSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75058341FC2889500D3B66D /* RHSecondViewController.m */; };
+		E75058371FC2889500D3B66D /* RHSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75058351FC2889500D3B66D /* RHSecondViewController.xib */; };
+		E750583B1FC288A500D3B66D /* RHThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75058391FC288A500D3B66D /* RHThirdViewController.m */; };
+		E750583C1FC288A500D3B66D /* RHThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E750583A1FC288A500D3B66D /* RHThirdViewController.xib */; };
+		E7674E181FC43D1500F5B938 /* RHTitleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7674E171FC43D1500F5B938 /* RHTitleScrollView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E75057E41FC27E9B00D3B66D /* TestMutiViewsSwitching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMutiViewsSwitching.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E75057E71FC27E9B00D3B66D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E75057E81FC27E9B00D3B66D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E75057F01FC27E9B00D3B66D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E75057F31FC27E9B00D3B66D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E75057F51FC27E9B00D3B66D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E75057F61FC27E9B00D3B66D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E75057FD1FC27ECF00D3B66D /* RHTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RHTableViewController.h; sourceTree = "<group>"; };
+		E75057FE1FC27ED000D3B66D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E75057FF1FC27ED000D3B66D /* RHTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RHTableViewController.m; sourceTree = "<group>"; };
+		E75058021FC27EEC00D3B66D /* RHPushAndPopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHPushAndPopViewController.h; sourceTree = "<group>"; };
+		E75058031FC27EEC00D3B66D /* RHPushAndPopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHPushAndPopViewController.m; sourceTree = "<group>"; };
+		E75058041FC27EEC00D3B66D /* RHPushAndPopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RHPushAndPopViewController.xib; sourceTree = "<group>"; };
+		E750580A1FC27F4200D3B66D /* RHModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHModalViewController.h; sourceTree = "<group>"; };
+		E750580B1FC27F4200D3B66D /* RHModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHModalViewController.m; sourceTree = "<group>"; };
+		E750580C1FC27F4200D3B66D /* RHModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RHModalViewController.xib; sourceTree = "<group>"; };
+		E750580F1FC27F6000D3B66D /* RHRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHRootViewController.h; sourceTree = "<group>"; };
+		E75058101FC27F6000D3B66D /* RHRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHRootViewController.m; sourceTree = "<group>"; };
+		E75058111FC27F6000D3B66D /* RHRootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RHRootViewController.xib; sourceTree = "<group>"; };
+		E75058141FC27FA300D3B66D /* RHAddChildViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHAddChildViewController.h; sourceTree = "<group>"; };
+		E75058151FC27FA300D3B66D /* RHAddChildViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHAddChildViewController.m; sourceTree = "<group>"; };
+		E75058161FC27FA300D3B66D /* RHAddChildViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RHAddChildViewController.xib; sourceTree = "<group>"; };
+		E75058211FC2850200D3B66D /* RHModalTargetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHModalTargetViewController.h; sourceTree = "<group>"; };
+		E75058221FC2850200D3B66D /* RHModalTargetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHModalTargetViewController.m; sourceTree = "<group>"; };
+		E75058231FC2850200D3B66D /* RHModalTargetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RHModalTargetViewController.xib; sourceTree = "<group>"; };
+		E75058261FC285D400D3B66D /* RHRootTargetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHRootTargetViewController.h; sourceTree = "<group>"; };
+		E75058271FC285D400D3B66D /* RHRootTargetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHRootTargetViewController.m; sourceTree = "<group>"; };
+		E75058281FC285D400D3B66D /* RHRootTargetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RHRootTargetViewController.xib; sourceTree = "<group>"; };
+		E750582E1FC2888600D3B66D /* RHFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHFirstViewController.h; sourceTree = "<group>"; };
+		E750582F1FC2888600D3B66D /* RHFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHFirstViewController.m; sourceTree = "<group>"; };
+		E75058301FC2888600D3B66D /* RHFirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RHFirstViewController.xib; sourceTree = "<group>"; };
+		E75058331FC2889500D3B66D /* RHSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHSecondViewController.h; sourceTree = "<group>"; };
+		E75058341FC2889500D3B66D /* RHSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHSecondViewController.m; sourceTree = "<group>"; };
+		E75058351FC2889500D3B66D /* RHSecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RHSecondViewController.xib; sourceTree = "<group>"; };
+		E75058381FC288A500D3B66D /* RHThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHThirdViewController.h; sourceTree = "<group>"; };
+		E75058391FC288A500D3B66D /* RHThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHThirdViewController.m; sourceTree = "<group>"; };
+		E750583A1FC288A500D3B66D /* RHThirdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RHThirdViewController.xib; sourceTree = "<group>"; };
+		E7674E161FC43D1500F5B938 /* RHTitleScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHTitleScrollView.h; sourceTree = "<group>"; };
+		E7674E171FC43D1500F5B938 /* RHTitleScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHTitleScrollView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E75057E11FC27E9B00D3B66D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E75057DB1FC27E9B00D3B66D = {
+			isa = PBXGroup;
+			children = (
+				E75057E61FC27E9B00D3B66D /* TestMutiViewsSwitching */,
+				E75057E51FC27E9B00D3B66D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E75057E51FC27E9B00D3B66D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E75057E41FC27E9B00D3B66D /* TestMutiViewsSwitching.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E75057E61FC27E9B00D3B66D /* TestMutiViewsSwitching */ = {
+			isa = PBXGroup;
+			children = (
+				E75058411FC2A0B400D3B66D /* child */,
+				E75058401FC2A06D00D3B66D /* modal */,
+				E750583E1FC2A06700D3B66D /* root */,
+				E750583D1FC2A04900D3B66D /* push */,
+				E75057FE1FC27ED000D3B66D /* Main.storyboard */,
+				E75057FD1FC27ECF00D3B66D /* RHTableViewController.h */,
+				E75057FF1FC27ED000D3B66D /* RHTableViewController.m */,
+				E75057E71FC27E9B00D3B66D /* AppDelegate.h */,
+				E75057E81FC27E9B00D3B66D /* AppDelegate.m */,
+				E75057F01FC27E9B00D3B66D /* Assets.xcassets */,
+				E75057F21FC27E9B00D3B66D /* LaunchScreen.storyboard */,
+				E75057F51FC27E9B00D3B66D /* Info.plist */,
+				E75057F61FC27E9B00D3B66D /* main.m */,
+			);
+			path = TestMutiViewsSwitching;
+			sourceTree = "<group>";
+		};
+		E750583D1FC2A04900D3B66D /* push */ = {
+			isa = PBXGroup;
+			children = (
+				E75058021FC27EEC00D3B66D /* RHPushAndPopViewController.h */,
+				E75058031FC27EEC00D3B66D /* RHPushAndPopViewController.m */,
+				E75058041FC27EEC00D3B66D /* RHPushAndPopViewController.xib */,
+			);
+			path = push;
+			sourceTree = "<group>";
+		};
+		E750583E1FC2A06700D3B66D /* root */ = {
+			isa = PBXGroup;
+			children = (
+				E750580F1FC27F6000D3B66D /* RHRootViewController.h */,
+				E75058101FC27F6000D3B66D /* RHRootViewController.m */,
+				E75058111FC27F6000D3B66D /* RHRootViewController.xib */,
+				E75058261FC285D400D3B66D /* RHRootTargetViewController.h */,
+				E75058271FC285D400D3B66D /* RHRootTargetViewController.m */,
+				E75058281FC285D400D3B66D /* RHRootTargetViewController.xib */,
+			);
+			path = root;
+			sourceTree = "<group>";
+		};
+		E75058401FC2A06D00D3B66D /* modal */ = {
+			isa = PBXGroup;
+			children = (
+				E750580A1FC27F4200D3B66D /* RHModalViewController.h */,
+				E750580B1FC27F4200D3B66D /* RHModalViewController.m */,
+				E750580C1FC27F4200D3B66D /* RHModalViewController.xib */,
+				E75058211FC2850200D3B66D /* RHModalTargetViewController.h */,
+				E75058221FC2850200D3B66D /* RHModalTargetViewController.m */,
+				E75058231FC2850200D3B66D /* RHModalTargetViewController.xib */,
+			);
+			path = modal;
+			sourceTree = "<group>";
+		};
+		E75058411FC2A0B400D3B66D /* child */ = {
+			isa = PBXGroup;
+			children = (
+				E75058141FC27FA300D3B66D /* RHAddChildViewController.h */,
+				E75058151FC27FA300D3B66D /* RHAddChildViewController.m */,
+				E75058161FC27FA300D3B66D /* RHAddChildViewController.xib */,
+				E750582E1FC2888600D3B66D /* RHFirstViewController.h */,
+				E750582F1FC2888600D3B66D /* RHFirstViewController.m */,
+				E75058301FC2888600D3B66D /* RHFirstViewController.xib */,
+				E75058331FC2889500D3B66D /* RHSecondViewController.h */,
+				E75058341FC2889500D3B66D /* RHSecondViewController.m */,
+				E75058351FC2889500D3B66D /* RHSecondViewController.xib */,
+				E75058381FC288A500D3B66D /* RHThirdViewController.h */,
+				E75058391FC288A500D3B66D /* RHThirdViewController.m */,
+				E750583A1FC288A500D3B66D /* RHThirdViewController.xib */,
+				E7674E161FC43D1500F5B938 /* RHTitleScrollView.h */,
+				E7674E171FC43D1500F5B938 /* RHTitleScrollView.m */,
+			);
+			path = child;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E75057E31FC27E9B00D3B66D /* TestMutiViewsSwitching */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E75057FA1FC27E9B00D3B66D /* Build configuration list for PBXNativeTarget "TestMutiViewsSwitching" */;
+			buildPhases = (
+				E75057E01FC27E9B00D3B66D /* Sources */,
+				E75057E11FC27E9B00D3B66D /* Frameworks */,
+				E75057E21FC27E9B00D3B66D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestMutiViewsSwitching;
+			productName = TestMutiViewsSwitching;
+			productReference = E75057E41FC27E9B00D3B66D /* TestMutiViewsSwitching.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E75057DC1FC27E9B00D3B66D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = DaFenQI;
+				TargetAttributes = {
+					E75057E31FC27E9B00D3B66D = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E75057DF1FC27E9B00D3B66D /* Build configuration list for PBXProject "TestMutiViewsSwitching" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E75057DB1FC27E9B00D3B66D;
+			productRefGroup = E75057E51FC27E9B00D3B66D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E75057E31FC27E9B00D3B66D /* TestMutiViewsSwitching */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E75057E21FC27E9B00D3B66D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E750580E1FC27F4300D3B66D /* RHModalViewController.xib in Resources */,
+				E75058001FC27ED000D3B66D /* Main.storyboard in Resources */,
+				E75058131FC27F6000D3B66D /* RHRootViewController.xib in Resources */,
+				E75058371FC2889500D3B66D /* RHSecondViewController.xib in Resources */,
+				E75058321FC2888600D3B66D /* RHFirstViewController.xib in Resources */,
+				E75057F41FC27E9B00D3B66D /* LaunchScreen.storyboard in Resources */,
+				E750583C1FC288A500D3B66D /* RHThirdViewController.xib in Resources */,
+				E750582A1FC285D400D3B66D /* RHRootTargetViewController.xib in Resources */,
+				E75058181FC27FA300D3B66D /* RHAddChildViewController.xib in Resources */,
+				E75058251FC2850200D3B66D /* RHModalTargetViewController.xib in Resources */,
+				E75058061FC27EEC00D3B66D /* RHPushAndPopViewController.xib in Resources */,
+				E75057F11FC27E9B00D3B66D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E75057E01FC27E9B00D3B66D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E75058241FC2850200D3B66D /* RHModalTargetViewController.m in Sources */,
+				E75058361FC2889500D3B66D /* RHSecondViewController.m in Sources */,
+				E75058311FC2888600D3B66D /* RHFirstViewController.m in Sources */,
+				E75057F71FC27E9B00D3B66D /* main.m in Sources */,
+				E750580D1FC27F4200D3B66D /* RHModalViewController.m in Sources */,
+				E75058171FC27FA300D3B66D /* RHAddChildViewController.m in Sources */,
+				E75058011FC27ED000D3B66D /* RHTableViewController.m in Sources */,
+				E75058291FC285D400D3B66D /* RHRootTargetViewController.m in Sources */,
+				E75058051FC27EEC00D3B66D /* RHPushAndPopViewController.m in Sources */,
+				E75058121FC27F6000D3B66D /* RHRootViewController.m in Sources */,
+				E750583B1FC288A500D3B66D /* RHThirdViewController.m in Sources */,
+				E75057E91FC27E9B00D3B66D /* AppDelegate.m in Sources */,
+				E7674E181FC43D1500F5B938 /* RHTitleScrollView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E75057F21FC27E9B00D3B66D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E75057F31FC27E9B00D3B66D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E75057F81FC27E9B00D3B66D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E75057F91FC27E9B00D3B66D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E75057FB1FC27E9B00D3B66D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TestMutiViewsSwitching/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hmy.TestMutiViewsSwitching;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E75057FC1FC27E9B00D3B66D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TestMutiViewsSwitching/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hmy.TestMutiViewsSwitching;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E75057DF1FC27E9B00D3B66D /* Build configuration list for PBXProject "TestMutiViewsSwitching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E75057F81FC27E9B00D3B66D /* Debug */,
+				E75057F91FC27E9B00D3B66D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E75057FA1FC27E9B00D3B66D /* Build configuration list for PBXNativeTarget "TestMutiViewsSwitching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E75057FB1FC27E9B00D3B66D /* Debug */,
+				E75057FC1FC27E9B00D3B66D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E75057DC1FC27E9B00D3B66D /* Project object */;
+}
