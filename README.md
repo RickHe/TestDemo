@@ -8,8 +8,8 @@
 | TestCarouselImageView | 非全屏无限循环轮播 | [App Store iPad 端首页无限循环轮播效果实现思路](http://www.jianshu.com/p/66f82c8f9a4b) |
 | TestStarView | 星级评分效果 | [iOS 评分实现思路](http://www.jianshu.com/p/3dcde01301e0) |
 | TestWebView | 带菊花和进度加载条的 webview | 暂无 |
-| TestNavigationBarStyle | iOS 全局设置UINavigationBar，UITabBar，状态栏！ | http://www.jianshu.com/p/80ffff5b52d1 |
-| TestSmallFeature | iOS 常用小功能 | http://www.jianshu.com/p/edf4e0747196 |
+| TestNavigationBarStyle | iOS 使用 UIAppearance全局设置样式！ | [iOS 全局设置UINavigationBar，UITabBar，状态栏！](http://www.jianshu.com/p/80ffff5b52d1) |
+| TestSmallFeature | iOS 电话，短信，email，App Store 评分 | [iOS 常用小功能](http://www.jianshu.com/p/edf4e0747196) |
 | TestNetworkRequest | AFNetworing 3.0 简单二次封装实践 | 暂无 |
 | TestDemoTemplate | demo项目模板 | 暂无 |
 
