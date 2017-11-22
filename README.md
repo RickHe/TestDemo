@@ -13,6 +13,8 @@
 | TestNetworkRequest | AFNetworing 3.0 简单二次封装实践 | 暂无 |
 | TestDemoTemplate | demo项目模板 | 暂无 |
 | TestAnimation | iOS 常见基础动画 |[iOS 常见基础动画](http://www.jianshu.com/p/524b5c2c13bc) |
+| TestMutiViewsSwitching | iOS 常见几种视图切换方式 |暂无 |
+
 
 
 
