@@ -25,13 +25,9 @@
 		E75058251FC2850200D3B66D /* RHModalTargetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75058231FC2850200D3B66D /* RHModalTargetViewController.xib */; };
 		E75058291FC285D400D3B66D /* RHRootTargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75058271FC285D400D3B66D /* RHRootTargetViewController.m */; };
 		E750582A1FC285D400D3B66D /* RHRootTargetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75058281FC285D400D3B66D /* RHRootTargetViewController.xib */; };
-		E75058311FC2888600D3B66D /* RHFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E750582F1FC2888600D3B66D /* RHFirstViewController.m */; };
-		E75058321FC2888600D3B66D /* RHFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75058301FC2888600D3B66D /* RHFirstViewController.xib */; };
-		E75058361FC2889500D3B66D /* RHSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75058341FC2889500D3B66D /* RHSecondViewController.m */; };
-		E75058371FC2889500D3B66D /* RHSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E75058351FC2889500D3B66D /* RHSecondViewController.xib */; };
-		E750583B1FC288A500D3B66D /* RHThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E75058391FC288A500D3B66D /* RHThirdViewController.m */; };
-		E750583C1FC288A500D3B66D /* RHThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E750583A1FC288A500D3B66D /* RHThirdViewController.xib */; };
 		E7674E181FC43D1500F5B938 /* RHTitleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7674E171FC43D1500F5B938 /* RHTitleScrollView.m */; };
+		E773D7DA1FC520F500974D12 /* RHContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E773D7D81FC520F500974D12 /* RHContentViewController.m */; };
+		E773D7DB1FC520F500974D12 /* RHContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E773D7D91FC520F500974D12 /* RHContentViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,17 +59,11 @@
 		E75058261FC285D400D3B66D /* RHRootTargetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHRootTargetViewController.h; sourceTree = "<group>"; };
 		E75058271FC285D400D3B66D /* RHRootTargetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHRootTargetViewController.m; sourceTree = "<group>"; };
 		E75058281FC285D400D3B66D /* RHRootTargetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RHRootTargetViewController.xib; sourceTree = "<group>"; };
-		E750582E1FC2888600D3B66D /* RHFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHFirstViewController.h; sourceTree = "<group>"; };
-		E750582F1FC2888600D3B66D /* RHFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHFirstViewController.m; sourceTree = "<group>"; };
-		E75058301FC2888600D3B66D /* RHFirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RHFirstViewController.xib; sourceTree = "<group>"; };
-		E75058331FC2889500D3B66D /* RHSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHSecondViewController.h; sourceTree = "<group>"; };
-		E75058341FC2889500D3B66D /* RHSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHSecondViewController.m; sourceTree = "<group>"; };
-		E75058351FC2889500D3B66D /* RHSecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RHSecondViewController.xib; sourceTree = "<group>"; };
-		E75058381FC288A500D3B66D /* RHThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHThirdViewController.h; sourceTree = "<group>"; };
-		E75058391FC288A500D3B66D /* RHThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHThirdViewController.m; sourceTree = "<group>"; };
-		E750583A1FC288A500D3B66D /* RHThirdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RHThirdViewController.xib; sourceTree = "<group>"; };
 		E7674E161FC43D1500F5B938 /* RHTitleScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHTitleScrollView.h; sourceTree = "<group>"; };
 		E7674E171FC43D1500F5B938 /* RHTitleScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHTitleScrollView.m; sourceTree = "<group>"; };
+		E773D7D71FC520F500974D12 /* RHContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RHContentViewController.h; sourceTree = "<group>"; };
+		E773D7D81FC520F500974D12 /* RHContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RHContentViewController.m; sourceTree = "<group>"; };
+		E773D7D91FC520F500974D12 /* RHContentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RHContentViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,17 +155,11 @@
 				E75058141FC27FA300D3B66D /* RHAddChildViewController.h */,
 				E75058151FC27FA300D3B66D /* RHAddChildViewController.m */,
 				E75058161FC27FA300D3B66D /* RHAddChildViewController.xib */,
-				E750582E1FC2888600D3B66D /* RHFirstViewController.h */,
-				E750582F1FC2888600D3B66D /* RHFirstViewController.m */,
-				E75058301FC2888600D3B66D /* RHFirstViewController.xib */,
-				E75058331FC2889500D3B66D /* RHSecondViewController.h */,
-				E75058341FC2889500D3B66D /* RHSecondViewController.m */,
-				E75058351FC2889500D3B66D /* RHSecondViewController.xib */,
-				E75058381FC288A500D3B66D /* RHThirdViewController.h */,
-				E75058391FC288A500D3B66D /* RHThirdViewController.m */,
-				E750583A1FC288A500D3B66D /* RHThirdViewController.xib */,
 				E7674E161FC43D1500F5B938 /* RHTitleScrollView.h */,
 				E7674E171FC43D1500F5B938 /* RHTitleScrollView.m */,
+				E773D7D71FC520F500974D12 /* RHContentViewController.h */,
+				E773D7D81FC520F500974D12 /* RHContentViewController.m */,
+				E773D7D91FC520F500974D12 /* RHContentViewController.xib */,
 			);
 			path = child;
 			sourceTree = "<group>";
@@ -241,15 +225,13 @@
 				E750580E1FC27F4300D3B66D /* RHModalViewController.xib in Resources */,
 				E75058001FC27ED000D3B66D /* Main.storyboard in Resources */,
 				E75058131FC27F6000D3B66D /* RHRootViewController.xib in Resources */,
-				E75058371FC2889500D3B66D /* RHSecondViewController.xib in Resources */,
-				E75058321FC2888600D3B66D /* RHFirstViewController.xib in Resources */,
 				E75057F41FC27E9B00D3B66D /* LaunchScreen.storyboard in Resources */,
-				E750583C1FC288A500D3B66D /* RHThirdViewController.xib in Resources */,
 				E750582A1FC285D400D3B66D /* RHRootTargetViewController.xib in Resources */,
 				E75058181FC27FA300D3B66D /* RHAddChildViewController.xib in Resources */,
 				E75058251FC2850200D3B66D /* RHModalTargetViewController.xib in Resources */,
 				E75058061FC27EEC00D3B66D /* RHPushAndPopViewController.xib in Resources */,
 				E75057F11FC27E9B00D3B66D /* Assets.xcassets in Resources */,
+				E773D7DB1FC520F500974D12 /* RHContentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,8 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E75058241FC2850200D3B66D /* RHModalTargetViewController.m in Sources */,
-				E75058361FC2889500D3B66D /* RHSecondViewController.m in Sources */,
-				E75058311FC2888600D3B66D /* RHFirstViewController.m in Sources */,
+				E773D7DA1FC520F500974D12 /* RHContentViewController.m in Sources */,
 				E75057F71FC27E9B00D3B66D /* main.m in Sources */,
 				E750580D1FC27F4200D3B66D /* RHModalViewController.m in Sources */,
 				E75058171FC27FA300D3B66D /* RHAddChildViewController.m in Sources */,
@@ -270,7 +251,6 @@
 				E75058291FC285D400D3B66D /* RHRootTargetViewController.m in Sources */,
 				E75058051FC27EEC00D3B66D /* RHPushAndPopViewController.m in Sources */,
 				E75058121FC27F6000D3B66D /* RHRootViewController.m in Sources */,
-				E750583B1FC288A500D3B66D /* RHThirdViewController.m in Sources */,
 				E75057E91FC27E9B00D3B66D /* AppDelegate.m in Sources */,
 				E7674E181FC43D1500F5B938 /* RHTitleScrollView.m in Sources */,
 			);

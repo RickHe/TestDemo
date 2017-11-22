@@ -19,6 +19,7 @@
 @interface RHTitleScrollView : UIView
 
 @property(nonatomic, strong) NSMutableArray *titlesArray;
+@property(nonatomic, weak) id<RHTitleScrollViewDelegate> delegate;
 
 - (void)selectIndex:(NSInteger)index;
 - (void)selectTitle:(NSString *)title;

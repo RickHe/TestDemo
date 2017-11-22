@@ -7,16 +7,18 @@
 //
 
 #import "RHAddChildViewController.h"
-#import "RHFirstViewController.h"
-#import "RHSecondViewController.h"
-#import "RHThirdViewController.h"
+#import "RHTitleScrollView.h"
+#import "RHContentViewController.h"
 
-@interface RHAddChildViewController ()
+#define kRHScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kRHScreenHeight [UIScreen mainScreen].bounds.size.height
 
-@property(nonatomic, strong) UIViewController *currentVC;
-@property(nonatomic, strong) RHFirstViewController *firstVC;
-@property(nonatomic, strong) RHSecondViewController *secondVC;
-@property(nonatomic, strong) RHThirdViewController *thirdVC;
+@interface RHAddChildViewController () <RHTitleScrollViewDelegate, UIScrollViewDelegate> {
+    UIScrollView *_contentScrollView;
+}
+
+@property (weak, nonatomic) IBOutlet RHTitleScrollView *titleScrollView;
+@property(nonatomic, strong) NSMutableArray *titlesArray;
 
 @end
 
@@ -25,11 +27,54 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self addChildViewController:self.firstVC];
-    [self setVCFrame:self.firstVC];
-    self.currentVC = self.firstVC;
-    [self.firstVC didMoveToParentViewController:self];
-    [self.view addSubview:self.firstVC.view];
+    self.navigationController.navigationBar.translucent = NO;
+    
+    [self creatSubviews];
+}
+
+- (void)creatSubviews {
+    CGFloat y  = CGRectGetMaxY(self.titleScrollView.frame);
+    CGRect rect  = CGRectMake(0, y, kRHScreenWidth, kRHScreenHeight - y);
+    
+    _contentScrollView = [[UIScrollView alloc] initWithFrame:rect];
+    
+    _contentScrollView.pagingEnabled = YES;
+    _contentScrollView.showsHorizontalScrollIndicator  = NO;
+    _contentScrollView.delegate = self;
+    [self.view addSubview:_contentScrollView];
+    
+    self.titlesArray = [@[@"体育", @"彩票", @"新闻", @"体育", @"彩票", @"新闻"] mutableCopy];
+    self.titleScrollView.titlesArray = self.titlesArray;
+    self.titleScrollView.delegate = self;
+    [self addChildVC];
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    CGFloat y  = CGRectGetMaxY(self.titleScrollView.frame);
+    CGRect rect  = CGRectMake(0, y, kRHScreenWidth, kRHScreenHeight - y);
+    _contentScrollView.frame = rect;
+}
+
+- (void)titleScrollView:(RHTitleScrollView *)titleScrollView didSelectTitle:(NSString *)title atIndex:(NSInteger)index {
+    [self jumpToChildViewController:index];
+}
+
+- (void)jumpToChildViewController:(NSInteger)index {
+    _contentScrollView.contentOffset = CGPointMake(index * kRHScreenWidth, 0);
+}
+
+- (void)addChildVC {
+    for (int i = 0; i < self.titlesArray.count; i++) {
+        RHContentViewController *contentVC = [[RHContentViewController alloc] init];
+        contentVC.contentTitle = self.titlesArray[i];
+        [self addChildViewController:contentVC];
+        
+        contentVC.view.frame = CGRectMake(i * kRHScreenWidth, 0, kRHScreenWidth, kRHScreenHeight - _contentScrollView.frame.origin.y);
+        [_contentScrollView addSubview:contentVC.view];
+    }
+    _contentScrollView.contentSize = CGSizeMake(self.titlesArray.count * kRHScreenWidth, 0);
 }
 
 - (void)setVCFrame:(UIViewController *)vc {
@@ -37,65 +82,11 @@
     vc.view.center = self.view.center;
 }
 
-- (RHFirstViewController *)firstVC {
-    if (!_firstVC) {
-        _firstVC = [[RHFirstViewController alloc] init];
-    }
-    return _firstVC;
-}
-
-- (RHSecondViewController *)secondVC {
-    if (!_secondVC) {
-        _secondVC = [[RHSecondViewController alloc] init];
-    }
-    return _secondVC;
-}
-
-- (RHThirdViewController *)thirdVC {
-    if (!_thirdVC) {
-        _thirdVC = [[RHThirdViewController alloc] init];
-    }
-    return _thirdVC;
-}
-
-- (IBAction)segementAction:(id)sender {
-    UISegmentedControl *segment = (UISegmentedControl *)sender;
-    switch (segment.selectedSegmentIndex) {
-        case 0:
-            [self transitionFromViewController:self.currentVC toViewController:self.firstVC];
-            break;
-        case 1:
-            [self transitionFromViewController:self.currentVC toViewController:self.secondVC];
-            break;
-        case 2:
-            [self transitionFromViewController:self.currentVC toViewController:self.thirdVC];
-            break;
-            
-        default:
-            break;
-    }
-}
-
-- (void)transitionFromViewController:(UIViewController *)fromViewController toViewController:(UIViewController *)toViewController {
-    if (fromViewController == toViewController) return;
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    NSInteger index  = _contentScrollView.contentOffset.x / kRHScreenWidth;
     
-    [self addChildViewController:toViewController];
-    [self setVCFrame:toViewController];
-    
-    [self transitionFromViewController:fromViewController toViewController:toViewController duration:.8f options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
-       
-    } completion:^(BOOL finished) {
-        if (finished) {
-            [toViewController didMoveToParentViewController:self];
-            [fromViewController willMoveToParentViewController:nil];
-            [fromViewController removeFromParentViewController];
-            self.currentVC = toViewController;
-        } else {
-            [toViewController willMoveToParentViewController:nil];
-            [toViewController removeFromParentViewController];
-            self.currentVC = fromViewController;
-        }
-    }];
+    [self.titleScrollView selectIndex:index];
+    [self jumpToChildViewController:index];
 }
 
 @end
