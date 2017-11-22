@@ -12,6 +12,8 @@
 | TestSmallFeature | iOS 电话，短信，email，App Store 评分 | [iOS 常用小功能](http://www.jianshu.com/p/edf4e0747196) |
 | TestNetworkRequest | AFNetworing 3.0 简单二次封装实践 | 暂无 |
 | TestDemoTemplate | demo项目模板 | 暂无 |
+| TestAnimation | iOS 常见基础动画 |[iOS 常见基础动画](http://www.jianshu.com/p/524b5c2c13bc) |
+
 
 
 
