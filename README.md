@@ -14,8 +14,7 @@
 | TestDemoTemplate | demo项目模板 | 暂无 |
 | TestAnimation | iOS 常见基础动画 |[iOS 常见基础动画](http://www.jianshu.com/p/524b5c2c13bc) |
 | TestMutiViewsSwitching | iOS 常见几种视图切换方式 |暂无 |
-
-
+| TestCornerImage | iOS图片处理 | [iOS图片处理之切圆角](https://www.jianshu.com/p/55b0e0fca421);[iOS 图片处理之任意路径剪切](https://www.jianshu.com/p/62952866f01e) |
 
 
 
