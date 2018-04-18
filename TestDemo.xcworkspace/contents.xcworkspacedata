@@ -2,6 +2,13 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:TestFMDB"
+      name = "TestFMDB">
+      <FileRef
+         location = "group:TestFMDB.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:/Users/DaFenQI/Documents/TestDemo/TestSafetyContainer"
       name = "TestSafetyContainer">
       <FileRef
