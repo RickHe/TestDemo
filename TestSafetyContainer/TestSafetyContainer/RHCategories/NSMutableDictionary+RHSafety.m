@@ -33,7 +33,7 @@
 
 
 - (void)rh_setObject:(id)obj forKeyedSubscript:(id<NSCopying>)key {
-    if (obj && key) {
+    if (key) {
         [self rh_setObject:obj forKeyedSubscript:key];
     } else {
         [RHExceptionHelper raiseException:@"setObjectForKey: object or key is nil"];

@@ -172,6 +172,11 @@
     dic[key2] = object;
     dic[nilKey] = object;
     NSLog(@"value1 = %@ value2 = %@ value3 = %@", dic[key1], dic[key2], dic[nilKey]);
+    
+    NSString *testKey = nil;
+    NSString *testValue = nil;
+    dic[@"key"] = testValue;
+    dic[testKey] = testValue;
 }
 
 @end
